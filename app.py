@@ -1,4 +1,5 @@
 import dash
+import dash_auth
 import dash_core_components as dcc
 import dash_html_components as html
 import pandas as pd
@@ -14,7 +15,16 @@ external_stylesheets = [
         "rel": "stylesheet",
     },
 ]
+
+VALID_USERNAME_PASSWORD_PAIRS = {
+    'lu.zhang@sonova.com': 'FloyerSSV123!'
+}
+
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+auth = dash_auth.BasicAuth(
+    app,
+    VALID_USERNAME_PASSWORD_PAIRS
+)
 server = app.server
 app.title = "Floyer Dashboard!"
 

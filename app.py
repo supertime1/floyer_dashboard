@@ -5,6 +5,10 @@ import dash_html_components as html
 import pandas as pd
 from dash.dependencies import Output, Input
 import plotly.graph_objects as go
+import json
+
+with open('user_lst.json', ) as f:
+    VALID_USERNAME_PASSWORD_PAIRS = json.load(f)
 
 data = pd.read_csv("joint_table.csv")
 
@@ -16,10 +20,6 @@ external_stylesheets = [
     },
 ]
 
-
-VALID_USERNAME_PASSWORD_PAIRS = {
-    'lu.zhang@sonova.com': 'FloyerSSV123!'
-}
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 auth = dash_auth.BasicAuth(

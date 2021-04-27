@@ -276,7 +276,7 @@ def update_demographic(project, subject):
         'layout': go.Layout(title='Gender', height=350)
     }
     pie_race_figure = {
-        'data': [go.Pie(values=race['counts'], labels=race['race'])],
+        'data': [go.Pie(values=race['counts'], labels=race['race'], showlegend=False)],
         'layout': go.Layout(title='Race', height=350)
     }
     return hist_age_figure, pie_gender_figure, pie_race_figure

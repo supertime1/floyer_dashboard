@@ -6,8 +6,8 @@ body {
 
 .header {
     background-color: #222222;
-    height: 288px;
-    padding: 16px 0 0 0;
+    height: 256px;
+    padding: 64px 0 0 0;
 }
 
 .header-emoji {
@@ -31,6 +31,48 @@ body {
     max-width: 384px;
 }
 
+.menu {
+    height: 128px;
+    display: flex;
+    justify-content: space-around;
+    margin: -64px 128px 0 128px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.menu-title {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #079A82;
+}
+
+.block {
+    margin: 12px 128px 12px 128px;
+    padding: 6px 24px 6px 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+}
+
+.block-title {
+    font-weight: bold;
+    color: #079A82;
+}
+
+.flex-block {
+    display: flex;
+    margin-right: 24px;
+}
+
+.plot {
+    width: 33%;
+}
+
+.sub-block {
+    padding: 6px 24px 6px 24px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+    width: 50%;
+}
 .wrapper {
     margin-right: auto;
     margin-left: auto;
@@ -45,17 +87,6 @@ body {
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
 }
 
-.menu {
-    height: 112px;
-    width: 1024px;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 24px;
-    margin: -80px auto 0 auto;
-    background-color: #FFFFFF;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
-}
-
 .Select-control {
     width: 256px;
     height: 48px;
@@ -67,14 +98,4 @@ body {
 
 .Select--multi .Select-value-label {
     line-height: 32px;
-}
-
-.menu-title {
-    margin-bottom: 6px;
-    font-weight: bold;
-    color: #079A82;
-}
-
-.margin180 {
-    margin-right: 480px;
 }
